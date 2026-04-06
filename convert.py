@@ -10,9 +10,9 @@ ds = Dataset(nc_file, "w", format="NETCDF4")
 # Unlimited dimension for appending
 ds.createDimension("time", None)
 
-# Time variable
+#Time variable
 time_var = ds.createVariable("time", "f8", ("time",))
-time_var.units = "seconds since xxx UTC"
+#time_var.units = "seconds since xxx UTC"
 
 # Create data variables
 # Add only columns you want and that are numeric
